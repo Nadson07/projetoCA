@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}/*  O * significa todos os elementos  */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(235,239,242,1) 0%, rgba(191,114,107,1) 50%, rgba(115,93,97,0.5156482861400894) 100%);
+    
+
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header{
+    background-color: #735D61;
+    text-align: center;
+    color: rgb(243, 242, 247);
+    padding: 10px;
+}
+.title {
+    font-size: 26px;
+
+
+}
+
+section{
+    padding: 90px;
+    /* background-color: #01080eb3; */
+   /*  background-image: url("../images/icones/fundo.jpg") ; */ 
+   background: linear-gradient(90deg, rgba(235,239,242,1) 0%, rgba(191,114,107,1) 50%, rgba(115,93,97,0.5156482861400894) 100%);
+    background-size: cover ; /* Deixa a imagem inteira no espaço desejado */
+    overflow: hidden; /* Faz com que a imagem preencha tudo o que ela tem que preencher não faz ela ficar pela metade */
+}
+
+
+.formContainer{
+    max-width: 900px;
+    background-color: #F2C6AC; /* A QUANTIDADE DE LETRAS 'B' SIGNIFICA A TRANSPARENCIA DO QUADRO */
+    padding: 60px 30px 30px 60px;
+    float: left;
+    text-align: left;
+    border-radius: 8px;
+    box-sizing : border-box ;
+    width: 100%; 
+    
+
+   
+}
+.picture{
+    border-radius: 4px;
+    height: 370px;
+    width: auto;
+    position: relative;
+    align-items: left;
+    padding: 0px 0px 50px 0px;
+}
+
+.description{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    max-width: 60%;
+    margin-left: 40px;
+}
+
+
+#contato{
+
+    border-radius: 9px;
+    padding: 25px;
+    background-color: #735D61;
+    margin: 40px;
+    max-width: 300px;
+
+}
+
+h2{
+    font-size: 16px;
+}
+
+
+.mb{
+    margin-bottom: 15px;
+}
+
+input, select, textarea{
+    width: 100%;
+    box-sizing: border-box; /* Essa função deixa todos os quadrados do mesmo tamanho  */
+    
+    padding: 10px;
+    border: none; /* Tira a borda  */
+    margin-bottom: 10px; /* Espaço entre os quadros */
+    border-radius: 4px;
+
+}
+input[type="submit"]{
+/* Tudo sera aplicado só em input tipo submit */ 
+    color: white;
+    background-color: #2a4680;
+    font-weight: bold; /* Peso da fonte */
+    cursor: pointer;
+
+}
+select /*  Essa propriedade faz com que o botão de select dos estados fica fora do que é padrão  */{
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('../images/icones/arrow.jpg'); /* imagem da setinha do select */
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px) ; /* Posição da imagem */
+    background-position-y: center ; /* centralizando a imagem */
+
+}
+.social-icons{
+    margin-top: 10px;
+}
+.social-icon{
+    width: 25px;
+    padding: 10px 10px 10px 0px; 
+
+}
+
+a{
+    text-decoration: none;              /* Tira o sublinhado da das imagens */
+    color:  #fdba24;                /* Esse mantem a cor do link laranjado */
+    font-weight: bold;
+}
+
+
+.description p, .description h3{
+    margin-bottom: 5px;
+    padding-bottom: 5px; 
+}
+.description h3{
+    font-size: 24px;
+}
+p{
+    text-align: justify;
+    
+}
+
+
+.formulario{
+    box-sizing : border-box ;
+    width: 100%; 
+
+}
+
+footer{
+    padding: 9px;
+    background-color: #da757563;
+    /* background-image: url("../images/icones/fundo.jpg") ; */
+    background-size: cover ; /* Deixa a imagem inteira no espaço desejado */
+    overflow: hidden; 
+    
+}
+iframe{
+    padding: 0px 0px 50px 80px;
+}
+
+ @media screen and (max-width:760px) {
+      body, section, footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing : border-box ;
+
+    }
+    
+} 
+
+ 
+@media screen and (max-width:760px) {
+    #contato, iframe{
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      box-sizing : border-box ;
+      
+  }
+  
+}
+@media screen and (max-width:760px) {
+    .description {
+        padding-top: 70px;
+        padding-bottom:60px ;
+
+
+    }
+  
+}
+
